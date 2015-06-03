@@ -1,40 +1,47 @@
+<!DOCTYPE html>
 <html>
+<meta charset="utf-8">
+<title>BitShares Brochure</title>
 <style>
 
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,500,700,300,900,300italic,400italic);
 
 body  		{margin: 0; background: #CCC; }
-.page 		{width: 11in; height: 8.5in; margin: 1em; background: #FFF;}
-.pane 		{width: 3.26666in; margin: 0 0.2in; height: 100%; float: left; position: relative; background: #FCFCFC;}
-footer 		{position: absolute; bottom: 0.18in; width: 100%; left: 0; font-size: 0.12in; color: #888;}
+div.page 	{width: 11in; height: 8.5in; margin: 1em; background: #FFF;}
+section 	{width: 3.26666in; margin: 0 0.2in; height: 100%; float: left; position: relative; background: #FCFCFC;}
+footer 		{position: absolute; bottom: 0; margin-bottom: 0.18in; width: 100%; left: 0; font-size: 0.12in; color: #888;}
 
 @media print {
-	.page 	{margin: 0; height: 8.5in; /*page-break-after: always; overflow: hidden;*/}
+	section {margin: 0; height: 8.5in; /*page-break-after: always; overflow: hidden;*/}
 }
 
 body 		{font-family: 'Roboto', sans-serif; font-weight: 300;}
 h2,h3,h4	{font-weight: normal;}
 img 		{display: block; max-width: 100%; margin: 0 auto;}
+h1 			{font-size: 0.32in; color: #999; font-weight: 700; margin: 0.7in auto 0.5in; width: 2.3in;}
 h2 			{font-size: 0.23in; color: #333; margin: 0.3in 0 0.2in; text-align: center;}
 h3 			{font-size: 0.23in; color: #777; margin: 0.1in 0 0;}
 h4 			{font-size: 0.18in; color: #444; margin: 0.1in 0 -0.1in;}
-p 			{font-size: 0.161in; color: #999; margin: 0.16in 0; text-align: justify; line-height: 1.25em;}
-ul,ol 		{font-size: 0.161in; color: #666; margin: 0.16in 0; text-align: justify; line-height: 1.25em; padding-left: 0.3in;}
+p,ul,ol 	{font-size: 0.161in; color: #999; margin: 0.16in 0; text-align: justify; line-height: 1.25em;}
+ul,ol 		{color: #666; padding-left: 0.3in;}
+
 em 			{font-weight: 400; color: #555; font-style: normal;}
 strong 		{font-weight: 500; color: #000;}
-li strong 	{color: #00a9e0; }
+li strong 	{color: #00a9e0;}
 hr 			{margin: 0.3in 0;}
 
+.center 	{text-align: center;}
 .bigger 	{font-size: 0.2in;}
-.lead 		{font-size: 0.22in; color: #666; margin: 0.2in 0;}
 .explain    {font-size: 0.14in; margin: -0.2in 0 0; text-align: center; color: #555; letter-spacing: 0.01in; font-style: italic; font-weight: 400;}
 .compact	{letter-spacing: -0.004in;}
 .attrib 	{text-align: center; font-size: 0.1in; color: #CCC;}
+.copyright	{font-size: 0.15in;}
 
-.cover_title {font-size: 0.32in; color: #999; font-weight: 700; width: 2.3in; margin: 0.7in auto 0.5in;}
-.cover_list {list-style: none; text-align: center; padding: 0;}
+.cover_list {list-style: none; text-align: center; padding: 0; margin-bottom: 0.25in;}
 .cover_list li {font-size: 0.25in; color: #AAA; margin: 0.2in 0;}
 .cover_call {text-align: center; margin: 0.3in 0; font-size: 0.3in; font-weight: normal;}
+
+img.chart	{margin-top: -0.1in; width: 80%;}
 
 .links 	    {margin: 0in; color: #666;}
 .links dt   {font-size: 0.18in; font-weight: bold; margin: 0.15in 0 0.05in;}
@@ -63,7 +70,7 @@ hr 			{margin: 0.3in 0;}
 	
 
 
-	<div class="pane">
+	<section>
 	  	<h2>What is BitShares?</h2>
 		<p class="compact">
 			BitShares is the flagship Bank &amp; Exchange DAC. It serves to establish 
@@ -95,73 +102,74 @@ hr 			{margin: 0.3in 0;}
 			<li><strong>Don't be a laggard.</strong><br /> BitShares is 
 				profitable freedom, and we need your help to reach critical mass.</li>
 	   	</ul>
-		<img src="innovation.png" style="margin-top: -0.1in; width: 80%;" />
+		<img class="chart" src="innovation.png" alt="" />
 		<div class="attrib">Graphic by Pnautilus on Wikipedia</div>
 	   	<footer>
 			* Seriously. <strong>Control of your funds is entirely in your hands.</strong><br/>
 			&nbsp;&nbsp; With this comes great responsibility; do not take it lightly.
 		</footer>
-	</div>
+	</section>
 
 
 
-	<div class="pane">
+	<section>
 		<h2>Join the BitShares Community</h2>
 		<div class="shadow">
-			<img src="map.png" />
+			<img src="map.png" alt="" />
 		</div>
 		<p class="bigger">
 			BitShares is an open-source project community with members around the world.
 		</p>
 		<dl class="links">
 			<dt>Where to find us:</dt>
-			<dd><span><img src="bts.png" 			/></span> bitsharestalk.org</dd>
-			<dd><span><img src="reddit.png" 		/></span> reddit.com/r/bitshares</dd>
-			<dd><span><img src="meetup.png" 		/></span> bitshares.meetup.com</dd>
+			<dd><span><img alt="" src="bts.png" 			/></span> bitsharestalk.org</dd>
+			<dd><span><img alt="" src="reddit.png" 		/></span> reddit.com/r/bitshares</dd>
+			<dd><span><img alt="" src="meetup.png" 		/></span> bitshares.meetup.com</dd>
 			<dt>Purchase BTS:</dt>
-			<dd><span><img src="metaexchange.png" 	/></span> metaexchange.info</dd>
-			<dd><span><img src="blocktrades.svg" 	/></span> blocktrades.us</dd>
+			<dd><span><img alt="" src="metaexchange.png" 	/></span> metaexchange.info</dd>
+			<dd><span><img alt="" src="blocktrades.svg" 	/></span> blocktrades.us</dd>
 			<!--<dt>Block Explorer:</dt>
 			<dd><span><img src="btsblocks.png" 		/></span> bitsharesblocks.com</dd>-->
 			<dt>More Information:</dt>
-			<dd><span><img src="bts.png" 			/></span> bitshares.org</dd>
+			<dd><span><img alt="" src="bts.png" 			/></span> bitshares.org</dd>
 		</dl>
 
 
-		<footer style="text-align: center; font-size: 0.15in;">
+		<footer class="center copyright">
 			Produced by bitscape media in Minneapolis.<br />
 			bitscape.io
 		</footer>
-	</div>
+	</section>
 
 
 
-	<div class="pane">
-		<p class="cover_title">
+	<section>
+		<h1>
 			Open-source, 
 			decentralized, 
 			auditable DACs
-		</p>
+		</h1>
 		<ul class="cover_list">
-			<li>bank & exchange</li>
+			<li>bank &amp; exchange</li>
 			<li>voting</li>
 			<li>record labels</li>
 			<li>gambling</li>
 			<li>insurance</li>
 		</ul>
-		<img src="bitshares.png" style="margin-top: 0.25in;" />
+		<img src="bitshares.png" alt="BitShares" />
 		<p class="cover_call">
 			An open call for<br /> early adopters and visionary investors.
 		</p>
-	</div>
+	</section>
 
 
 
-</div><div class="page">
+</div>
+<div class="page">
 
 
 
-	<div class="pane">
+	<section>
 		<h2>What is a DAC?</h2>
 		<p class="explain">Decentralized Autonomous Community</p>
 		<p>
@@ -186,25 +194,25 @@ hr 			{margin: 0.3in 0;}
 		<p>Auditable, verifiable and <em>hack-proof</em> voting.<br />
 			We believe <em>open-source is the only way</em>.</p>
 		<h4><strong>Music DAC:</strong> Decentralized Record Labels</h4>
-		<p>Record Label, Discovery & Streaming Service. 
+		<p>Record Label, Discovery &amp; Streaming Service. 
 			Fans pay (and even invest in) artists directly!</p>
 		<h4><strong>Play DAC:</strong> Provably-fair Gambling </h4>
 		<p>Decentralized and unstoppable gaming for all.</p>
 
 		<h3>What's next?</h3>
 		<ul>
-			<li>Prediction & Insurance Markets</li>
+			<li>Prediction &amp; Insurance Markets</li>
 			<li>Peer-to-peer ridesharing</li>
 			<li>Decentralized DNS</li>
 			<li>SkyNet DAC?</li>
 		</ul>
 
 		<p>The sky is the limit. Any business model can be modelled as a DAC&mdash;and one day, it will be.</p>
-	</div>
+	</section>
 
 
 
-	<div class="pane">
+	<section>
 		<h2>What is DPOS?</h2>
 		<p class="explain">Delegated Proof of Stake</p>
 		<!--<p><strong>DPOS is the underlying consensus protocol that powers the BitShares platform.</strong></p>-->
@@ -230,23 +238,23 @@ hr 			{margin: 0.3in 0;}
 		<h4><strong>Delegates:</strong> the "board of directors"</h4>
 		<p>Can change any blockchain parameters given 2 weeks' notice, during which shareholders can veto any such change.</p>
 		<!--<p>Learn more: https://bitshares.org/delegates</p>-->
-	</div>
+	</section>
 
 
 
-	<div class="pane">
+	<section>
 	   	<h2>Market Pegged Assets (MPAs)</h2>
 	   	<p class="explain">The Currency of BitShares</p>
 		<div class="mpa_icons">
-			<img src="bitusd.png" />
-			<img src="bitcny.png" />
-			<img src="bitgold.png" />
+			<img src="bitusd.png" alt="BitUSD" />
+			<img src="bitcny.png" alt="BitCNY" />
+			<img src="bitgold.png" alt="BitGOLD" />
 		</div>
 	   	
 		<!--<p>MPAs (informally "BitAssets") behave like any crypto token, but with stable price.</p>-->
 
 		<p>MPAs (or "BitAssets") are digital asset tokens that eliminate the burden of price volatility. bitUSD, bitCNY and bitGOLD will always trade near par value for the dollar, yuan and gold on crypto-currency exchanges worldwide.</p>
-		<p style="text-align:Center;">
+		<p class="center">
 			<em>MPAs are derivatives enforced by smart contracts and backed by 300% collateral.</em>
 		</p>
 		<p>BitAssets help businesses and shoppers avoid the hassle of transfering holdings back and forth between crypto and cash to evade costly price fluctuations.</p>
@@ -268,7 +276,7 @@ hr 			{margin: 0.3in 0;}
 		</p>
 		<!--<p>BTS provides the <em>fundamental value</em> of the platform. Casual users need not know the details of BTS.</p>-->
 
-	</div>
+	</section>
 
 
 
