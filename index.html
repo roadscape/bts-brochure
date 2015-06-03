@@ -9,7 +9,7 @@
 body  		{margin: 0; background: #CCC; }
 div.page 	{width: 11in; height: 8.5in; margin: 1em; background: #FFF;}
 section 	{width: 3.26666in; margin: 0 0.2in; height: 100%; float: left; position: relative; background: #FCFCFC;}
-footer 		{position: absolute; bottom: 0; margin-bottom: 0.18in; width: 100%; left: 0; font-size: 0.12in; color: #888;}
+footer 		{position: absolute; bottom: 0; margin-bottom: 0.18in; width: 100%; left: 0; font-size: 0.16in; color: #999; text-align: center;}
 
 @media print {
 	section {margin: 0; height: 8.5in; /*page-break-after: always; overflow: hidden;*/}
@@ -32,18 +32,18 @@ hr 			{margin: 0.3in 0;}
 
 .center 	{text-align: center;}
 .bigger 	{font-size: 0.2in;}
-.explain    {font-size: 0.14in; margin: -0.2in 0 0; text-align: center; color: #555; letter-spacing: 0.01in; font-style: italic; font-weight: 400;}
+.subtitle   {font-size: 0.14in; margin: -0.2in 0 0; text-align: center; color: #555; letter-spacing: 0.01in; font-style: italic; font-weight: 400;}
 .compact	{letter-spacing: -0.004in;}
 .attrib 	{text-align: center; font-size: 0.1in; color: #CCC;}
-.copyright	{font-size: 0.15in;}
+.footnote	{font-size: 0.12in;}
 
 .cover_list {list-style: none; text-align: center; padding: 0; margin-bottom: 0.25in;}
 .cover_list li {font-size: 0.25in; color: #AAA; margin: 0.2in 0;}
-.cover_call {text-align: center; margin: 0.3in 0; font-size: 0.3in; font-weight: normal;}
+.cover_call {text-align: center; margin: 0.3in 0; font-size: 0.3in; font-weight: 400;}
 
 img.chart	{margin-top: -0.1in; width: 80%;}
 
-.links 	    {margin: 0in; color: #666;}
+dl.links 	{margin: 0; color: #666;}
 .links dt   {font-size: 0.18in; font-weight: bold; margin: 0.15in 0 0.05in;}
 .links dd   {margin: 0; font-size: 0.25in;}
 .links span {display: inline-block; width: 26px; height: 32px; text-align: center; vertical-align: 0%; margin: 0.05in;}
@@ -104,9 +104,9 @@ img.chart	{margin-top: -0.1in; width: 80%;}
 	   	</ul>
 		<img class="chart" src="innovation.png" alt="" />
 		<div class="attrib">Graphic by Pnautilus on Wikipedia</div>
-	   	<footer>
+	   	<footer class="footnote">
 			* Seriously. <strong>Control of your funds is entirely in your hands.</strong><br/>
-			&nbsp;&nbsp; With this comes great responsibility; do not take it lightly.
+			  With this comes great responsibility; do not take it lightly.
 		</footer>
 	</section>
 
@@ -123,19 +123,17 @@ img.chart	{margin-top: -0.1in; width: 80%;}
 		<dl class="links">
 			<dt>Where to find us:</dt>
 			<dd><span><img alt="" src="bts.png" 			/></span> bitsharestalk.org</dd>
-			<dd><span><img alt="" src="reddit.png" 		/></span> reddit.com/r/bitshares</dd>
-			<dd><span><img alt="" src="meetup.png" 		/></span> bitshares.meetup.com</dd>
+			<dd><span><img alt="" src="reddit.png" 			/></span> reddit.com/r/bitshares</dd>
+			<dd><span><img alt="" src="meetup.png" 			/></span> bitshares.meetup.com</dd>
 			<dt>Purchase BTS:</dt>
 			<dd><span><img alt="" src="metaexchange.png" 	/></span> metaexchange.info</dd>
 			<dd><span><img alt="" src="blocktrades.svg" 	/></span> blocktrades.us</dd>
 			<!--<dt>Block Explorer:</dt>
-			<dd><span><img src="btsblocks.png" 		/></span> bitsharesblocks.com</dd>-->
+			<dd><span><img alt ="" src="btsblocks.png" 		/></span> bitsharesblocks.com</dd>-->
 			<dt>More Information:</dt>
 			<dd><span><img alt="" src="bts.png" 			/></span> bitshares.org</dd>
 		</dl>
-
-
-		<footer class="center copyright">
+		<footer>
 			Produced by bitscape media in Minneapolis.<br />
 			bitscape.io
 		</footer>
@@ -158,7 +156,8 @@ img.chart	{margin-top: -0.1in; width: 80%;}
 		</ul>
 		<img src="bitshares.png" alt="BitShares" />
 		<p class="cover_call">
-			An open call for<br /> early adopters and visionary investors.
+			An open call for<br /> early 
+			adopters and visionary investors.
 		</p>
 	</section>
 
@@ -171,7 +170,7 @@ img.chart	{margin-top: -0.1in; width: 80%;}
 
 	<section>
 		<h2>What is a DAC?</h2>
-		<p class="explain">Decentralized Autonomous Community</p>
+		<p class="subtitle">Decentralized Autonomous Community</p>
 		<p>
 			DACs are like robotic, unmanned companies. 
 			The first pilot project was launched June 2014.
@@ -206,7 +205,6 @@ img.chart	{margin-top: -0.1in; width: 80%;}
 			<li>Decentralized DNS</li>
 			<li>SkyNet DAC?</li>
 		</ul>
-
 		<p>The sky is the limit. Any business model can be modelled as a DAC&mdash;and one day, it will be.</p>
 	</section>
 
@@ -214,29 +212,30 @@ img.chart	{margin-top: -0.1in; width: 80%;}
 
 	<section>
 		<h2>What is DPOS?</h2>
-		<p class="explain">Delegated Proof of Stake</p>
+		<p class="subtitle">Delegated Proof of Stake</p>
 		<!--<p><strong>DPOS is the underlying consensus protocol that powers the BitShares platform.</strong></p>-->
 		<p>
-			<em>DPOS</em> is the open-source protocol used to create self-governing apps (i.e., DACs).<!--<br /> BitShares is powered by DPOS.-->
+			<em>DPOS</em> is the open-source protocol used to create self-governing apps (i.e., DACs).
 		</p>
-		<p>The <em>blockchain</em> is a DAC's internal database. 
-			Every ten seconds, all pending transactions are packaged into a <em>block</em> and added to the chain.
+		<p>
+			The <em>blockchain</em> is a DAC's internal database. 
+			Every ten seconds, all pending transactions are packaged 
+			into a <em>block</em> and added to the chain.
 		</p>
-
 		<p>
 			<em>Asset tokens</em> are freely exchangeable on the blockchain. 
-			They can represent currencies, commodities, shares, loyalty points, coupons, credits, receipts, vouchers, and more.
+			They can represent currencies, commodities, shares, loyalty points, 
+			coupons, credits, receipts, vouchers, and more.
 		</p>
-
 		<hr />
-
 		<h3>Three classes of entities power a DPOS blockchain:</h3>
 		<h4><strong>Witnesses:</strong> network maintainers</h4>
 		<p>Elected by shareholders to validate and sign transactions and produce them into blocks.</p>
 		<h4><strong>Workers:</strong> crowdhired contractors</h4>
 		<p>Developers, marketers, and others are paid by the DAC itself via dilution.</p> 
 		<h4><strong>Delegates:</strong> the "board of directors"</h4>
-		<p>Can change any blockchain parameters given 2 weeks' notice, during which shareholders can veto any such change.</p>
+		<p>Can change any blockchain parameters given 2 weeks' notice, 
+			during which shareholders can veto any such change.</p>
 		<!--<p>Learn more: https://bitshares.org/delegates</p>-->
 	</section>
 
@@ -244,38 +243,41 @@ img.chart	{margin-top: -0.1in; width: 80%;}
 
 	<section>
 	   	<h2>Market Pegged Assets (MPAs)</h2>
-	   	<p class="explain">The Currency of BitShares</p>
+	   	<p class="subtitle">The Currency of BitShares</p>
 		<div class="mpa_icons">
 			<img src="bitusd.png" alt="BitUSD" />
 			<img src="bitcny.png" alt="BitCNY" />
 			<img src="bitgold.png" alt="BitGOLD" />
 		</div>
-	   	
 		<!--<p>MPAs (informally "BitAssets") behave like any crypto token, but with stable price.</p>-->
-
-		<p>MPAs (or "BitAssets") are digital asset tokens that eliminate the burden of price volatility. bitUSD, bitCNY and bitGOLD will always trade near par value for the dollar, yuan and gold on crypto-currency exchanges worldwide.</p>
+		<p>
+			MPAs (or "BitAssets") are digital asset tokens that eliminate the burden of price volatility. 
+			bitUSD, bitCNY and bitGOLD will always trade near par value for the dollar, yuan and 
+			gold on crypto-currency exchanges worldwide.
+		</p>
 		<p class="center">
 			<em>MPAs are derivatives enforced by smart contracts and backed by 300% collateral.</em>
 		</p>
-		<p>BitAssets help businesses and shoppers avoid the hassle of transfering holdings back and forth between crypto and cash to evade costly price fluctuations.</p>
-
+		<p>
+			BitAssets help businesses and shoppers avoid the hassle of transfering holdings back and 
+			forth between crypto and cash to evade costly price fluctuations.
+		</p>
 		<hr />
 		<h2>User-Issued Assets (UIAs)</h2>
-		<p class="explain">Stock Distribution and Rewards Programs</p>
+		<p class="subtitle">Stock Distribution and Rewards Programs</p>
 		<p>
 			You can issue your own tokens which can be traded freely within BitShares. 
-			 Some use cases are to facilitate crowdfunding, token controlled access to content, 
-			company stock distribution, and IOUs for auditable and secure AML / KYC compliant gateway services.
+			Some use cases are to facilitate crowdfunding, token controlled access to content, company 
+			stock distribution, and IOUs for auditable and secure AML / KYC compliant gateway services.
 		</p>
 		<hr />
 		<h2>Base Token (BTS)</h2>
-		<p class="explain">For Techies and Investors</p>
+		<p class="subtitle">For Techies and Investors</p>
 		<p>
 			The base token BTS gives the platform real-world value and thus allows the creation of collateralized assets.
 			 <em>Holders of BTS own a part of BitShares, and a stake in its success.</em>
 		</p>
 		<!--<p>BTS provides the <em>fundamental value</em> of the platform. Casual users need not know the details of BTS.</p>-->
-
 	</section>
 
 
