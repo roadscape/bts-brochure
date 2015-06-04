@@ -6,13 +6,21 @@
 
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,500,700,300,900,300italic,400italic);
 
-body  		{margin: 0; background: #CCC; }
-div.page 	{width: 11in; height: 8.5in; margin: 1em; background: #FFF;}
-section 	{width: 3.26666in; margin: 0 0.2in; height: 100%; float: left; position: relative; background: #FCFCFC;}
+body  		{margin: 0;}
+div.page 	{width: 11in; height: 8.5in;}
+section 	{width: 3.26666in; margin: 0 0.2in; height: 100%; float: left; position: relative;}
 footer 		{position: absolute; bottom: 0; margin-bottom: 0.18in; width: 100%; left: 0; font-size: 0.16in; color: #999; text-align: center;}
 
+@media screen {
+	body		{background: #EEE;}
+	div.page 	{box-shadow: 4px 4px 5px #888888; margin: 2em auto; border: 1px solid black; background: #FFF;}
+	section		{background: #FFF;}
+	/* div.page:hover {background: #EEE;} */ /* for checking margins... */
+}
+
 @media print {
-	section {margin: 0; height: 8.5in; /*page-break-after: always; overflow: hidden;*/}
+	.noprint {display: none;}
+	/* div.page {page-break-after: always; overflow: hidden;} */
 }
 
 body 		{font-family: 'Roboto', sans-serif; font-weight: 300;}
@@ -45,9 +53,16 @@ img.chart	{margin-top: -0.1in; width: 80%;}
 
 dl.links 	{margin: 0; color: #666;}
 .links dt   {font-size: 0.18in; font-weight: bold; margin: 0.15in 0 0.05in;}
-.links dd   {margin: 0; font-size: 0.25in;}
-.links span {display: inline-block; width: 26px; height: 32px; text-align: center; vertical-align: 0%; margin: 0.05in;}
-.links img  {display: inline-block; height: 22px;}
+.links dd   {margin: 0; font-size: 0.2in; line-height: 0.4in;}
+.links .ico {display: inline-block; width: 0.3in; height: 0.3in; vertical-align: -15%; margin: 0 0.05in;}
+
+.ico 				{background-position: 50% 50%; background-size: contain; background-repeat: no-repeat;}
+.ico-reddit 		{background-image: url(reddit.png);}
+.ico-bts 			{background-image: url(bts.png);}
+.ico-meetup 		{background-image: url(meetup.png);}
+.ico-btsblocks 		{background-image: url(btsblocks.png);}
+.ico-blocktrades 	{background-image: url(blocktrades.svg);}
+.ico-metaexchange 	{background-image: url(metaexchange.png);}
 
 .mpa_icons {text-align: center; margin: 0.1in 0;}
 .mpa_icons img {display: inline-block; width: 30%; margin: -0.1in 0; opacity: 0.7;}
@@ -66,6 +81,13 @@ dl.links 	{margin: 0; color: #666;}
 
 </style>
 <body>
+
+<div class="noprint" style="text-align: center; margin: 0.3in 0 0;">
+	Directly print this page, or save as PDF. <br />
+	Only tested in Chrome!<br />
+	<a class="noprint" style="color: blue;" href="https://github.com/roadscape/bts-brochure">Fork this brochure on GitHub</a>
+</div>
+
 <div class="page">
 	
 
@@ -122,16 +144,14 @@ dl.links 	{margin: 0; color: #666;}
 		</p>
 		<dl class="links">
 			<dt>Where to find us:</dt>
-			<dd><span><img alt="" src="bts.png" 			/></span> bitsharestalk.org</dd>
-			<dd><span><img alt="" src="reddit.png" 			/></span> reddit.com/r/bitshares</dd>
-			<dd><span><img alt="" src="meetup.png" 			/></span> bitshares.meetup.com</dd>
+			<dd><span class="ico ico-bts"></span> bitsharestalk.org</dd>
+			<dd><span class="ico ico-reddit"></span> reddit.com/r/bitshares</dd>
+			<dd><span class="ico ico-meetup"></span> bitshares.meetup.com</dd>
 			<dt>Purchase BTS:</dt>
-			<dd><span><img alt="" src="metaexchange.png" 	/></span> metaexchange.info</dd>
-			<dd><span><img alt="" src="blocktrades.svg" 	/></span> blocktrades.us</dd>
-			<!--<dt>Block Explorer:</dt>
-			<dd><span><img alt ="" src="btsblocks.png" 		/></span> bitsharesblocks.com</dd>-->
+			<dd><span class="ico ico-metaexchange"></span> metaexchange.info</dd>
+			<dd><span class="ico ico-blocktrades"></span> blocktrades.us</dd>
 			<dt>More Information:</dt>
-			<dd><span><img alt="" src="bts.png" 			/></span> bitshares.org</dd>
+			<dd><span class="ico ico-bts"></span> bitshares.org</dd>
 		</dl>
 		<footer>
 			Produced by bitscape media in Minneapolis.<br />
