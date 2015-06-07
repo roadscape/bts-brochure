@@ -2,6 +2,12 @@
 
 Hackable BitShares brochure produced by http://bitscape.io
 
+Preview the
+[HTML version](https://rawgit.com/roadscape/bts-brochure/master/index.html) or print the
+[PDF version](https://rawgit.com/roadscape/bts-brochure/master/brochure.pdf).
+
+--
+
 This brochure is an informational piece to spead the word about DACs & BitShares at local tech meetups and events.
 
 **Audience:** The primary audience is an IT-friendly early-adopter/investor crowd, though the goriest details are on the two inner-most pages. The goal is to inform and inspire about the possibilities of DACs.
